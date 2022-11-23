@@ -49,6 +49,10 @@ code {
 }
 
 @media (min-width: 900px) {
+  .Container {
+    display: flex !important;
+    background-color: red;
+  }
   .nav_bar_items {
     width: 90%;
     display: flex !important;
@@ -58,10 +62,7 @@ code {
 
 }
 @media(max-width: 730px) {
-  .nav_bar_items {
-    margin-top: 10px;
-    border-top: 1px solid #999;
-  }
+  
   .navItem {
     border-bottom: 1px solid #999;
     margin-bottom: 0px;
@@ -75,12 +76,19 @@ code {
     margin-bottom:10px;
     width: 100%;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer
   }
+
   .linhaheader img{
     padding-bottom: 10px;
   }
-
+  .fntrbt {
+    display: flex;
+    justify-content: end !important;
+    align-items: flex-end !important;
+   
+    flex-direction: row !important;
+  }
 }
 
 label {
